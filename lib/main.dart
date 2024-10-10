@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:seat_booking/10-10-24/bottombar_page.dart';
+import 'package:seat_booking/10-10-24/home.dart';
 import 'package:seat_booking/alert_dialoge/alert_box.dart';
 import 'package:seat_booking/alert_dialoge/profile.dart';
 import 'package:seat_booking/home_page.dart';
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
+     /* theme: ThemeData(
        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -22,9 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
         "profile":(context)=>Profile(),
       },
-      initialRoute: "profile",
-      // home: const HomePage()
+      initialRoute: "profile",*/
+     home: BottombarPage()
     );
   }
 }
-
