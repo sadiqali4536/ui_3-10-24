@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:seat_booking/10-10-24/bottombar_page.dart';
 import 'package:seat_booking/10-10-24/home.dart';
+import 'package:seat_booking/14-10-24/bottem_navigationbar_ex.dart';
 import 'package:seat_booking/alert_dialoge/alert_box.dart';
 import 'package:seat_booking/alert_dialoge/profile.dart';
 import 'package:seat_booking/home_page.dart';
@@ -25,7 +26,9 @@ class MyApp extends StatelessWidget {
         "profile":(context)=>Profile(),
       },
       initialRoute: "profile",*/
-     home: BottombarPage()
+      // BottombarPage()
+     home:BottomNavigationbarEx(),
+  
     );
   }
 }
